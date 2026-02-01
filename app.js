@@ -71,7 +71,6 @@ const Menu = document.getElementById("Menu");
 
 hamb.addEventListener("click", () => {
     Menu.classList.toggle("open");
-    document.body.classList.toggle("blur");
 });
 
 document.addEventListener("click", (e) => {
