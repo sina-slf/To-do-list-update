@@ -1,0 +1,129 @@
+body {
+    font-family: sans-serif;
+    align-items: center;
+    background: white;
+    transition: background-color 0.6s ease, color 0.6s ease;
+}
+/* left menu */
+.menu {
+    top: 0;
+    left: 0;
+    width: 62%;
+    border-top-right-radius: 10px;
+    height: 100%;
+    position: fixed;
+    transform: translateX(-105%);
+    transition: 0.3s;
+    background: black;
+}
+.menu.open {
+    transform: translateX(0);
+}
+.nev-li {
+    border-bottom: 1px solid black;
+    border-radius: 12px;
+}
+.nav-ul {
+    margin-left: -12px;
+}
+/* to do list li and ul */
+.list {
+    margin-left: -18px;
+}
+li {
+    margin-top: 10px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 8px;
+    margin-left: -11.6%;
+    list-style: none;
+    display: flex;
+    padding: 9px 18px 9px 18px;
+    align-items: center;
+    justify-content: start;
+    color: white;
+    background: rgb(48, 196, 250);
+}
+/* navbar */
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    border: none;
+    border-radius: 12px;
+    background: rgb(23, 126, 245);
+    padding: 10px 30px;
+    margin-left: 5px;
+    transition: 0.4s;
+}
+button:hover {
+    background: rgb(10, 121, 248);
+    border: 1px solid black;
+}
+input {
+    border: none;
+    padding: 10px 10px;
+    border-radius: 12px;
+    background: white;
+    border:  1px solid black;
+}
+img {
+    width: 34.4px;
+    cursor: pointer;
+    margin-left: 83%;
+    position: fixed;
+}
+/* dark and light */
+.switch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 17px;
+    width: 60px;
+    height: 28px;
+    position: absolute;
+    background-color: black;
+    margin-left: 340px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.circel {
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    background-color: white;
+    left: 32px;
+    transition:  0.4s;
+}
+/* hamb logo */
+.hamb {
+    cursor: pointer;
+    left: -350px;
+    width: 70px;
+}
+
+/* dark mood */
+
+body.dark {
+    background: black;
+}
+.switch.active {
+    background-color: white;
+}
+.switch.active .circel {
+    background-color: black;
+    left: 2px;
+}
+body.dark li {
+    background: rgb(127, 117, 237);
+}
+body.dark .menu {
+    background: white;
+}
+body.dark .nav-li {
+    color: white;
+    background: none;
+}
